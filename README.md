@@ -5,7 +5,7 @@ O objetivo do projeto é criar uma platafroma web de quiz sobre um determinado a
 
 ## Veja o sistema rodando
 
-[`CLIQUE AQUI`](https://mathquiz.gabrielmnobre.vercel.app/){:target="_blank"}
+[`CLIQUE AQUI`](https://mathquiz.gabrielmnobre.vercel.app/)
 
 ## Tecnologias utilizadas para o desenvolvimento
 
