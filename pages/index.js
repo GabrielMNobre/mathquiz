@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
+import { useRouter } from 'next/router';
+
 import db from '../db.json';
 import Widget from '../src/components/Widget';
 import Footer from '../src/components/Footer';
@@ -18,12 +20,36 @@ export const QuizContainer = styled.div`
 `;
 
 export default function Home() {
+  const router = useRouter();
+  const [name, setName] = useState('');
+
   return (
     <QuizBackground backgroundImage={db.bg}>
       <QuizContainer>
         <Widget>
-          <Widget.Header />
-          <Widget.Content />
+          <Widget.Header>
+            <h1>{ db.title }</h1>
+          </Widget.Header>
+          <Widget.Content>
+            <p>
+              {db.description}
+            </p>
+            <form onSubmit={(infos) => {
+              infos.preventDefault();
+              router.push(`/quiz?name=${name}`);
+            }}
+            >
+              <input
+                onChange={(infos) => {
+                  setName(infos.target.value);
+                }}
+                placeholder="Escreva o seu nome aqui"
+              />
+              <button type="submit" disabled={name.length === 0}>
+                JOGAR
+              </button>
+            </form>
+          </Widget.Content>
         </Widget>
         <Widget>
           <Widget.Content />
