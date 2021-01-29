@@ -37,38 +37,6 @@ Widget.Content = styled.div`
   form {
     display: flex;
     flex-direction: column;
-    input {
-      width: 100%;
-      padding: 8px;
-      margin-top: 10px;
-      border-radius: 4px;
-      border: 1px solid ${({ theme }) => theme.colors.primary};
-      color: ${({ theme }) => theme.colors.contrastText}; 
-      background-color: #1C1814;
-      font-style: normal;
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 24px;
-      letter-spacing: 0.15px;
-    }
-    button {
-      width: 100%;
-      margin-top: 7%;
-      padding: 8px;
-      color: ${({ theme }) => theme.colors.contrastText};
-      background-color: ${({ theme }) => theme.colors.primary};
-      border-radius: 4px;
-      border: 1px solid ${({ theme }) => theme.colors.primary};
-      font-style: normal;
-      font-size: 14px;
-      font-weight: 700;
-      line-height: 16px;
-      letter-spacing: 1.25px;
-      text-align: center;
-    }
-    button:disabled {
-      background-color: #1C1814;
-    }
   }
   padding: 24px 32px 32px 32px;
   & > *:first-child {
@@ -80,6 +48,24 @@ Widget.Content = styled.div`
   ul {
     list-style: none;
     padding: 0;
+  }
+`;
+
+Widget.Topic = styled.a`
+  outline: 0;
+  text-decoration: none;
+  color: ${({ theme }) => theme.colors.contrastText};
+  background-color: ${({ theme }) => `${theme.colors.primary}40`};
+  padding: 10px 15px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  border-radius: ${({ theme }) => theme.borderRadius};
+  transition: .3s;
+  display: block;
+  
+  &:hover,
+  &:focus {
+    opacity: .5;
   }
 `;
 
