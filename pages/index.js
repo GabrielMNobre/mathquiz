@@ -41,9 +41,6 @@ export default function Home() {
             </form>
           </Widget.Content>
         </Widget>
-        <Widget>
-          <Widget.Content />
-        </Widget>
         <Footer />
       </QuizContainer>
       <GitHubCorner projectUrl="https://github.com/GabrielMNobre" />
