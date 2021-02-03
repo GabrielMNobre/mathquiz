@@ -5,30 +5,60 @@
   "load": "https://i.stack.imgur.com/hzk6C.gif",
   "questions": [
     {
-      "image": "https://thumbs.gfycat.com/FormalFaroffAustraliancurlew-size_restricted.gif",
-      "title": "Como fazer um seletor por id via CSS?",
-      "description": "Essa é pra aquecer",
+      "image": "https://media2.giphy.com/media/DHqth0hVQoIzS/giphy.gif",
+      "title": "Qual o símbolo utilizado para representar a operação de fatorial?",
       "answer": 2,
       "alternatives": [
-        ".elemento",
-        "*elemento",
-        "#elemento",
-        "%elemento"
+        ".",
+        "*",
+        "!",
+        "()"
       ]
     },
     {
-      "image": "https://thumbs.gfycat.com/FormalFaroffAustraliancurlew-size_restricted.gif",
-      "title": "Como fazer um background gradiente com css?",
-      "description": "Faz tempo em haha",
+      "image": "https://media2.giphy.com/media/DHqth0hVQoIzS/giphy.gif",
+      "title": "O algarismo romano L, representa qual valor?",
       "answer": 0,
       "alternatives": [
-         "background: linear-gradient(#e66465, #9198e5);",
-         "background: gradient(#e66465, #9198e5);"
+        "50",
+        "10",
+        "5",
+        "20"
+      ]
+    },
+    {
+      "image": "https://media2.giphy.com/media/DHqth0hVQoIzS/giphy.gif",
+      "title": "A expressão 5 + 5 x 5 - 5",
+      "answer": 1,
+      "alternatives": [
+        "5",
+        "25",
+        "45",
+        "50"
+      ]
+    },
+    {
+      "image": "https://media2.giphy.com/media/DHqth0hVQoIzS/giphy.gif",
+      "title": "O dobro de um número mais 3 é igual a 9, qual é o número?",
+      "answer": 1,
+      "alternatives": [
+        "4",
+        "3",
+        "5",
+        "2"
+      ]
+    },
+    {
+      "image": "https://media2.giphy.com/media/DHqth0hVQoIzS/giphy.gif",
+      "title": "Qual é a operação inversa da subtração?",
+      "answer": 3,
+      "alternatives": [
+        "Multiplicação",
+        "Exponenciação",
+        "Divisão",
+        "Adição"
       ]
     }
-  ],
-  "external": [
-    ""
   ],
   "theme": {
     "colors": {

@@ -7,6 +7,9 @@ import GitHubCorner from '../src/components/GitHubCorner';
 import QuizBackground from '../src/components/QuizBackground';
 import QuizContainer from '../src/components/QuizContainer';
 import AlternativesForm from '../src/components/AlternativesForm';
+import BackLinkArrow from '../src/components/BackLinkArrow';
+import Link from '../src/components/Link';
+import Load from '../src/components/Loading';
 
 function QuestionWidget({
   question,
@@ -24,6 +27,7 @@ function QuestionWidget({
   return (
     <Widget>
       <Widget.Header>
+        <BackLinkArrow href="/" />
         <h1>
           {`Pergunta ${questionIndex + 1} de ${totalQuestions}`}
         </h1>
@@ -41,9 +45,6 @@ function QuestionWidget({
         <h2>
           { question.title }
         </h2>
-        <p>
-          { question.description }
-        </p>
         <AlternativesForm
           onSubmit={(infos) => {
             infos.preventDefault();
@@ -97,10 +98,11 @@ function LoadingWidget() {
         </h1>
       </Widget.Header>
       <Widget.Content>
-        <img
+        {/* <img
           alt="Loading..."
           src={db.load}
-        />
+        /> */}
+        <Load />
       </Widget.Content>
     </Widget>
   );
@@ -138,6 +140,11 @@ function ResultQuizWidget({ results }) {
             </li>
           ))}
         </ul>
+        <Link href="/">
+          <Button.GoBack>
+            Voltar para página inicial
+          </Button.GoBack>
+        </Link>
       </Widget.Content>
     </Widget>
   );
@@ -166,7 +173,7 @@ function QuizPage() {
   useEffect(() => {
     setTimeout(() => {
       setScreenState(screenStates.QUIZ);
-    }, 1 * 1000);
+    }, 4 * 1000);
   }, []);
 
   function handleSubmit() {

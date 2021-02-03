@@ -34,6 +34,9 @@ export default function App({ Component, pageProps }) {
       <Head>
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta httpEquiv="content-language" content="pt-br" />
+        <meta property="og:image" content={db.bg} />
         <title>MathQuiz</title>
       </Head>
       <ThemeProvider theme={theme}>

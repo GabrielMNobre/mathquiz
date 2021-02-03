@@ -5,7 +5,7 @@ const Widget = styled.div`
   margin-bottom: 24px;
   border: 1px solid ${({ theme }) => theme.colors.primary};
   background-color: #1C1814;
-  border-radius: 4px;
+  border-radius: ${({ theme }) => theme.borderRadius};
   overflow: hidden;
 
   h1, h2, h3 {
@@ -48,6 +48,9 @@ Widget.Content = styled.div`
   ul {
     list-style: none;
     padding: 0;
+  }
+  h2 {
+    margin-bottom: 10px;
   }
 `;
 
